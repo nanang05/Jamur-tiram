@@ -47,6 +47,53 @@ html {
   scroll-behavior: smooth
 }
 
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%
+}
+
+.hero .wrap>*,
+.about>*,
+.loc>*,
+.prods>*,
+.grid4>* {
+  min-width: 0
+}
+
+.hero h1 {
+  overflow-wrap: break-word
+}
+
+.brand {
+  min-width: 0;
+  flex: 1 1 auto;
+  font-size: 1rem
+}
+
+.brand img,
+.brand svg {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block
+}
+
+.bar nav {
+  flex: none;
+  gap: 16px
+}
+
 * {
   box-sizing: border-box
 }
